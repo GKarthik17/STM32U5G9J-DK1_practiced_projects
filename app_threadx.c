@@ -132,7 +132,7 @@ void *MyThread2(UINT arg)
 		HAL_UART_Transmit(&huart1, buff2, strlen(buff2), 100);
 		tx_thread_sleep(10);
 		itoa(count, buff5, 10);
-		HAL_UART_Transmit(&huart1, buff5, 1, 100);
+		HAL_UART_Transmit(&huart1, buff5, 2, 100);
 		tx_thread_sleep(10);
 		HAL_UART_Transmit(&huart1, buff3, strlen(buff3), 100);
 		tx_thread_sleep(100);
